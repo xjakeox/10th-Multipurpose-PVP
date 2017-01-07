@@ -1,0 +1,18 @@
+// Basics
+author = "1SG J.Long[10thMD]"; 
+onLoadName = "10th Mountain PvP"; 
+onLoadMission = "10th Mountain PvP"; 
+loadScreen =  "";
+respawn = "BASE";
+respawnDelay = 10;
+respawnButton = 1;
+respawnOnStart = 0;
+
+class header {
+	gametype = coop;
+	maxplayers = 29;
+	minplayers = 1;
+};
+
+disabledAI = 1; //When 1, removes all playable units which do not have a human player. When 0, a logging out player will have AI take control of his character. Default value is 0. (MP)
+enableDebugConsole = 1; // Debug console for logged in admin.
