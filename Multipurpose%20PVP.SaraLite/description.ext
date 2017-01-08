@@ -3,7 +3,7 @@ author = "1SG J.Long[10thMD]";
 onLoadName = "10th Mountain PvP"; 
 onLoadMission = "10th Mountain PvP"; 
 loadScreen =  "";
-respawn = "BASE";
+respawn = "BIRD";
 respawnDelay = 10;
 respawnButton = 1;
 respawnOnStart = 0;
@@ -12,6 +12,46 @@ class header {
 	gametype = coop;
 	maxplayers = 29;
 	minplayers = 1;
+};
+
+class CfgSounds
+{
+	class uragan_1
+	{
+		name = "uragan_1";
+		sound[] = {"\sound\uragan_1.ogg", db+5, 1};
+		titles[] = {1, ""};
+	};
+	class bcg_wind
+	{
+		name = "bcg_wind";
+		sound[] = {"\sound\bcg_wind.ogg", db+5, 1};
+		titles[] = {1, ""};
+	};	
+	class rafala_1
+	{
+		name = "rafala_1";
+		sound[] = {"\sound\rafala_1.ogg", db+10, 1};
+		titles[] = {1, ""};
+	};	
+	class rafala_4_dr
+	{
+		name = "rafala_4_dr";
+		sound[] = {"\sound\rafala_4_dr.ogg", db+1, 1};
+		titles[] = {1, ""};
+	};	
+	class rafala_5_st
+	{
+		name = "rafala_5_st";
+		sound[] = {"\sound\rafala_5_st.ogg", db+1, 1};
+		titles[] = {1, ""};
+	};
+	class sandstorm
+	{
+		name = "sandstorm";
+		sound[] = {"\sound\sandstorm.ogg", db+10, 1};
+		titles[] = {1, ""};
+	};		
 };
 
 disabledAI = 1; //When 1, removes all playable units which do not have a human player. When 0, a logging out player will have AI take control of his character. Default value is 0. (MP)

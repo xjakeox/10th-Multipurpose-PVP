@@ -22,7 +22,8 @@ if (((format ["%1", player]) find "Lead") != -1) then
 		{
 			bluReady = 0;
 			publicVariable "bluReady";
-			bluBoard addAction ["<t color='#FFC300'>Mission Settings</t>", "missionSettings.sqf"];
+			//Allow bluLead to set the game mode.
+			bluBoard addAction ["<t color='#FFC300'>Game Mode</t>", "gameMode.sqf"];
 		};
 		
 		case opLead:
@@ -44,11 +45,3 @@ if (((format ["%1", player]) find "Lead") != -1) then
 		};
 	};
 };
-
-//Kill civilians... they are spectators
-if ((side player) == civilian) then 
-{
-   setPlayerRespawnTime 999999;
-   player setDamage 500;
-};
-
